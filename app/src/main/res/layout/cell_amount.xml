@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:orientation="horizontal">
+
+    <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+        android:id="@+id/amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingEnd="5dp"
+        android:paddingLeft="10dip"
+        android:paddingRight="5dp"
+        android:text="Pedido"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape_info_box" />
+
+    <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+        android:id="@+id/code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingLeft="2dip"
+        android:text="Fecha"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/shape_info_box" />
+
+    <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+        android:id="@+id/article"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:paddingLeft="2dip"
+        android:text="Cliente"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center_vertical"
+    android:animateLayoutChanges="true"
+    android:background="#e1e1e1">
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:background="?android:attr/dividerVertical"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:text="Aceptar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingLeft="10dip"
+        android:text="Cantidad"
+        android:gravity="center_vertical"
+        android:textColor="@color/black50"
+        android:textSize="18sp"
+        ttf:typeface="RobotoCondensed-Regular.ttf"
+        android:layout_toStartOf="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
+

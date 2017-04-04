@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:background="#1E88E5"
+        android:drawable="@drawable/cancel_pressed" />
+    <item
+        android:state_pressed="true"
+        android:state_enabled="true"
+        android:background="#1E88E5"
+        android:drawable="@drawable/cancel_pressed" />
+    <item
+        android:state_focused="true"
+        android:state_enabled="true"
+        android:background="#1E88E5"
+        android:drawable="@drawable/cancel" />
+    <item
+        android:state_enabled="true"
+        android:background="#1E88E5"
+        android:drawable="@drawable/cancel" />
+</selector>

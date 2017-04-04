@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:ttf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/widget_options"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.gc.materialdesign.views.ButtonFloatSmall
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/bg_main"
+            materialdesign:iconDrawable="@drawable/send" />
+
+        <com.gc.materialdesign.views.ButtonFloatSmall
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/bg_main"
+            materialdesign:iconDrawable="@drawable/edit" />
+
+
+        <com.gc.materialdesign.views.ButtonFloatSmall
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/bg_main"
+            materialdesign:iconDrawable="@drawable/delete" />
+    </LinearLayout>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/widget_options"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/divider_light" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/bg_main"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout4">
+
+        <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+            android:id="@+id/HeaderRequest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingEnd="5dp"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dp"
+            android:text="Pedido"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+        <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+            android:id="@+id/HeaderDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingLeft="5dip"
+            android:text="Fecha"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/white" />
+
+        <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+            android:id="@+id/HeaderClient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingLeft="5dip"
+            android:text="Cliente"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+
+    </LinearLayout>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/divider_light" />
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        style="@style/GPListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:background="@android:color/transparent"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@drawable/shape_info_box"
+        android:dividerHeight="1dp" />
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/primary"
+        materialdesign:animate="true"
+        materialdesign:iconDrawable="@drawable/ic_add_white_24dp"></com.gc.materialdesign.views.ButtonFloat>
+
+</RelativeLayout>

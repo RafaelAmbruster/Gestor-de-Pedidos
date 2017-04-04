@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="CustomTheme" parent="MaterialDrawerTheme.Light.DarkToolbar">
+        <item name="colorPrimary">#009EDF</item>
+        <item name="colorPrimaryDark">#009EDF</item>
+        <item name="colorAccent">#009EDF</item>
+        <item name="material_drawer_background">@color/material_drawer_dark_background</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_dark_primary_icon</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_text">#009EDF</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_dark_primary_text
+        </item>
+        <item name="android:activatedBackgroundIndicator">@drawable/activatedbackgroundindicator
+        </item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="FullscreenTheme"  parent="MaterialDrawerBaseBaseTheme.Light.DarkToolbar"></style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="GPListView">
+        <item name="android:scrollbarThumbHorizontal">@drawable/scroll_thumb</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll_thumb</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget" />
+
+    <style name="Widget.Message">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <style name="Widget.MessageTile">
+        <item name="android:background">@drawable/tile</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowDy">-3.5</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+
+
+
+</resources>

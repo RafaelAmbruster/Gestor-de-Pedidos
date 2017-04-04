@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ttf="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_fragment_retry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e1e1"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:alpha="0.3"
+            android:fitsSystemWindows="true"
+            android:src="@drawable/error_loading"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/empty_image"
+            android:layout_alignLeft="@+id/empty_image"
+            android:layout_alignRight="@+id/empty_image"
+            android:layout_alignStart="@+id/empty_image"
+            android:layout_below="@+id/empty_image"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dip"
+            android:gravity="center"
+            android:text="@string/error_loading"
+            android:textColor="#BBB"
+            ttf:typeface="Roboto-Black.ttf" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

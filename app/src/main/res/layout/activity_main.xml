@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sample_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ttf="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ViewAnimator
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+                android:id="@+id/date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="8dp"
+                android:text="Fecha"
+                android:textColor="@color/black50"
+                android:textSize="15sp"
+                ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+            <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+                android:id="@+id/clientcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/date"
+                android:layout_below="@+id/date"
+                android:padding="8dp"
+                android:text="Código"
+                android:textColor="@color/black50"
+                android:textSize="15sp"
+                ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+            <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+                android:id="@+id/clientname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/clientcode"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/clientcode"
+                android:layout_below="@+id/clientcode"
+                android:padding="8dp"
+                android:text="Nombre"
+                android:textColor="@color/black50"
+                android:textSize="15sp"
+                ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+            <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+                android:id="@+id/obracode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/clientname"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/clientname"
+                android:layout_below="@+id/clientname"
+                android:padding="8dp"
+                android:text="Obra"
+                android:textColor="@color/black50"
+                android:textSize="15sp"
+                ttf:typeface="RobotoCondensed-Regular.ttf" />
+
+            <com.app.ambruster.gestiondepedidos.view.textview.TypefacedTextView
+                android:id="@+id/obraname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/obracode"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/obracode"
+                android:layout_below="@+id/obracode"
+                android:padding="5dp"
+                android:text="Nombre"
+                android:textColor="@color/black50"
+                android:textSize="15sp"
+                ttf:typeface="RobotoCondensed-Regular.ttf" />
+        </RelativeLayout>
+
+    </ViewAnimator>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2" />
+
+</LinearLayout>
+
